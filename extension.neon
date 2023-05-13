@@ -1,0 +1,11 @@
+services:
+	-
+		class: \webflo\PHPStanDrupalFields\DrupalFieldsReflectionExtension
+		tags:
+			- phpstan.broker.propertiesClassReflectionExtension
+	-
+		class: \webflo\PHPStanDrupalFields\FieldableEntityInterfaceReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicMethodReturnTypeExtension
+	-
+		class: \webflo\PHPStanDrupalFields\FieldTypeMap

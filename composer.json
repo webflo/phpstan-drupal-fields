@@ -1,0 +1,27 @@
+{
+    "name": "webflo/phpstan-drupal-fields",
+    "type": "phpstan-extension",
+    "autoload": {
+        "psr-4": {
+            "webflo\\PHPStanDrupalFields\\": "src/"
+        },
+        "classmap": [
+            "phpstan-drupal/EntityFieldsViaMagicReflectionExtension.php"
+        ]
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^10 | ^11"
+            }
+        },
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    },
+    "require": {
+        "nette/neon": "^3.4"
+    }
+}
