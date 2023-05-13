@@ -21,6 +21,7 @@ A PHPStan extension and drush command to improve the capabilities of phpstan.
 
 ```shell
 composer require webflo/phpstan-drupal-fields
+drush phpstan:generate
 ```
 
 ### Example (with standard profile)
